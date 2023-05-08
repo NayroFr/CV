@@ -1,0 +1,220 @@
+$leftColumnBackground: #d5cdb7;
+$rightColumnBackground: #f0f0f0;
+$yellowDecoration: #b38000;
+$marginTopCenter: 10px auto 0;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgray;
+}
+
+// header {
+//   height: 4vh;
+//   background-color: grey;
+// }
+
+// nav {
+//   background-color: $blackBackground;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: right;
+//   height: 4vh;
+//   a {
+//     margin: Auto 50px Auto 0;
+//     text-decoration: 0;
+//     color: white;
+//   }
+// }
+
+main {
+  background-color: darkgrey;
+  // height: 92vh;
+  margin: 2vh 0;
+}
+
+.container {
+  margin: 0 auto;
+  height: 1000px;
+  width: 800px;
+  display: flex;
+  box-shadow: 18px 14px 16px -8px #464544;
+}
+
+#left_column {
+  color: black;
+  background-color: $leftColumnBackground;
+  height: 1000px;
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  .vertical_decoration {
+    order: 2;
+    .vertical_hr {
+      border: none;
+      height: 100%;
+      width: 4px;
+      background-color: $yellowDecoration;
+      margin-right: 5px;
+    }
+  }
+  .left_column_content {
+    width: 100%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    .face {
+      margin: 35px auto 0;
+      border: 2px solid $yellowDecoration;
+      width: 55%;
+      border-radius: 50%;
+    }
+    .name_info {
+      width: 100%;
+      margin-top: 20px;
+      h1 {
+        text-align: center;
+        margin: 0 auto;
+        line-height: 0.8em;
+        font-size: 1.4em;
+        font-weight: 400;
+      }
+      hr {
+        border: none;
+        width: 80%;
+        margin: $marginTopCenter;
+        background-color: $yellowDecoration;
+        height: 1px;
+      }
+      p {
+        margin: $marginTopCenter;
+        width: 85%;
+        font-size: 0.9em;
+        text-align: center;
+      }
+    }
+    .skill_hobby {
+      padding-left: 20px;
+      margin: 50px 0;
+      .skill_hobby_border_top {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-top: 2px solid $yellowDecoration;
+        border-left: 2px solid $yellowDecoration;
+        top: 10px;
+        right: 10px;
+      }
+      h3 {
+        font-size: 1.1em;
+        font-weight: 400;
+        padding-bottom: 10px;
+      }
+      .soft_skill {
+        margin-bottom: 20px;
+        ul {
+          padding-left: 20px;
+          li {
+            font-size: 0.95em;
+            span {
+              margin-left: -6px;
+            }
+            &::marker {
+              font-size: 0.85em;
+            }
+          }
+        }
+      }
+      .hobby {
+        h4 {
+          font-size: 0.9em;
+          font-weight: 400;
+        }
+        .hobby_flex {
+          display: flex;
+          margin-bottom: 10px;
+          img {
+            width: 25px;
+            margin-right: 7px;
+          }
+          p {
+            font-size: 1em;
+            font-weight: 300;
+            color: #5a5a5a;
+          }
+        }
+      }
+      .skill_hobby_border_bottom {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-bottom: 2px solid $yellowDecoration;
+        border-right: 2px solid $yellowDecoration;
+        bottom: 22px;
+        left: 210px;
+      }
+    }
+    .contact {
+      margin-top: 15px;
+      padding-left: 20px;
+      h2 {
+        margin-bottom: 10px;
+        color: #b27f00;
+        font-weight: 400;
+        font-size: 1.3em;
+      }
+      ul {
+        list-style-type: none;
+        font-size: 0.8em;
+        padding-left: 5px;
+        svg {
+          margin-right: 5px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            color: $yellowDecoration;
+          }
+        }
+      }
+    }
+  }
+}
+#right_column {
+  background-color: $rightColumnBackground;
+  color: black;
+  height: 1000px;
+  width: 65%;
+}
+// .triangle {
+//   display: inline-block;
+//   margin-left: -10px;
+//   margin-bottom: 20px;
+//   width: 0px;
+//   height: 0px;
+//   border-style: solid;
+//   border-width: 0 50px 50px 0;
+//   border-color: transparent $blackBackground transparent transparent;
+//   transform: rotate(30deg);
+//   filter: drop-shadow(3px -2px 1px white);
+// }
+
+// li:after {
+//   margin-left: 10px;
+//   content: "";
+//   display: inline-block;
+//   width: 100px;
+//   height: 10px;
+//   background-color: grey;
+// }
+// li.test:after {
+//   background-color: $yellowDecoration;
+//   width: 10px;
+// }
