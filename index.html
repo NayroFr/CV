@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minify/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -14,241 +14,421 @@
 </head>
 
 <body>
-    <!-- <header>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">CV</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header> -->
+    <header></header>
     <main>
         <div class="container">
-            <div id="left_column">
-                <div class="vertical_decoration">
-                    <hr class="vertical_hr">
-                </div>
-                <div class="left_column_content">
-                    <img src="img/picture.png" alt="" srcset="" class="face">
-                    <div class="name_info">
-                        <h1>Kevin Leveque</h1>
-                        <hr size="1">
-                        <p>
-                            Alternance intégrateur web <br>
-                            Haute-Vienne (87)<br> Vienne sud (86) <br>
-                            Durée : 18 mois
-                        </p>
+            <div class="flex_container">
+                <div id="left_column">
+                    <div class="vertical_decoration">
+                        <hr class="vertical_hr">
                     </div>
-                    <div class="skill_hobby">
-                        <div class="skill_hobby_border_top"></div>
-                        <div class="soft_skill">
-                            <h3>Qualités humaines</h3>
+                    <div id="left_column_content">
+                        <img src="img/picture.png" alt="" srcset="" class="face">
+                        <div class="name_info">
+                            <h1>Kevin Leveque</h1>
+                            <hr size="1">
+                            <p>
+                                Alternance intégrateur web <br>
+                                Haute-Vienne (87)<br> Vienne sud (86) <br>
+                                Durée : 18 mois
+                            </p>
+                        </div>
+                        <div id="skill_hobby">
+                            <div class="skill_hobby_border_top"></div>
+                            <div id="soft_skill">
+                                <h3>Qualités humaines</h3>
+                                <ul>
+                                    <li><span>Collaboration</span></li>
+                                    <li><span>Fléxibilité</span></li>
+                                    <li><span>Enthousiasme</span></li>
+                                    <li><span>Autonomie</span></li>
+                                    <li><span>Créativité</span></li>
+                                </ul>
+                            </div>
+                            <div id="hobby">
+                                <h3>Centres d'intérêt</h3>
+                                <div class="hobby_flex">
+                                    <div><img src="img/music.png" alt=""></div>
+                                    <div>
+                                        <h4>Musique</h4>
+                                        <p>Hip-hop ~ Chill ~ Classique</p>
+                                    </div>
+                                </div>
+                                <div class="hobby_flex">
+                                    <div><img src="img/chess.png" alt=""></div>
+                                    <div>
+                                        <h4>Echecs</h4>
+                                    </div>
+                                </div>
+                                <div class="hobby_flex">
+                                    <div><img src="img/esport.png" alt=""></div>
+                                    <div>
+                                        <h4>E-sport</h4>
+                                        <p>League of legends - <br> Starcraft - Counter strike</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill_hobby_border_bottom"></div>
+                        </div>
+                        <div id="contact">
+                            <h2>CONTACT</h2>
                             <ul>
-                                <li><span>Collaboration</span></li>
-                                <li><span>Fléxibilité</span></li>
-                                <li><span>Enthousiasme</span></li>
-                                <li><span>Autonomie</span></li>
-                                <li><span>Créativité</span></li>
+                                <li>
+                                    <svg width="12px" fill="#000000" viewBox="0 0 32 32" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>house</title>
+                                            <path
+                                                d="M0 16h4l12-13.696 12 13.696h4l-13.984-16h-4zM4 32h8v-9.984q0-0.832 0.576-1.408t1.44-0.608h4q0.8 0 1.408 0.608t0.576 1.408v9.984h8v-13.408l-12-13.248-12 13.248v13.408zM26.016 6.112l4 4.576v-8.672h-4v4.096z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    87300 - Saint-Bonnet-de-Bellac
+                                </li>
+                                <li>
+                                    <svg width="12px" fill="#000000" viewBox="0 0 32 32"
+                                        xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M20.629 5h-9.257a1.6 1.6 0 0 0-1.601 1.603V25.4a1.6 1.6 0 0 0 1.601 1.601h9.257c.883 0 1.6-.718 1.6-1.601V6.603c0-.885-.717-1.603-1.6-1.603zm-6.247 1.023h3.302v.768h-3.302v-.768zm1.619 19.395a1.024 1.024 0 0 1-1.023-1.021 1.023 1.023 0 0 1 2.044 0c-.001.494-.46 1.021-1.021 1.021zm5.028-3.501H10.971V7.704h10.058v14.213z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <a href="tel:+33768976963">07.68.97.69.63</a>
+                                </li>
+                                <li>
+                                    <svg width="12px" viewBox="0 0 512 512" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>mail-filled</title>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="mail-filled-white" fill="#000000"
+                                                    transform="translate(42.686667, 85.339333)">
+                                                    <path
+                                                        d="M3.55271368e-14,28.7 L213.333914,220.70134 L426.667,28.701 L426.667248,341.333608 L0.00058094128,341.333608 L3.55271368e-14,28.7 Z M394.776,1.42108547e-14 L213.333914,163.285608 L31.89,1.42108547e-14 L394.776,1.42108547e-14 Z"
+                                                        id="Combined-Shape"> </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <a href="mailto:kleveque.pro@gmail.com" target="_blank">kleveque.pro@gmail.com</a>
+                                </li>
+                                <li>
+                                    <svg width="12px" viewBox="0 0 20 20" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#000000" stroke="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>linkedin [#000000]</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs> </defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Dribbble-Light-Preview"
+                                                    transform="translate(-180.000000, -7479.000000)" fill="#000000">
+                                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                        <path
+                                                            d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                                                            id="linkedin-[#000000]"> </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <a href="https://www.linkedin.com/in/kevin-leveque/" target="_blank"
+                                        rel="noopener">/kevin-leveque</a>
+                                </li>
+                                <li>
+                                    <svg width="12px" viewBox="0 0 20 20" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>github [#000000]</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs> </defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Dribbble-Light-Preview"
+                                                    transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                        <path
+                                                            d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                                            id="github-[#000000]"> </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <a href="https://github.com/NayroFr" target="_blank" rel="noopener">/NayroFr</a>
+                                </li>
+                                <li>
+                                    <svg width="12px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"
+                                        enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g>
+                                                <path fill="#000000"
+                                                    d="M11,54h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C10,53.553,10.447,54,11,54 z M12,49h4v3h-4V49z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M23,54h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C22,53.553,22.447,54,23,54 z M24,49h4v3h-4V49z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M35,54h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C34,53.553,34.447,54,35,54 z M36,49h4v3h-4V49z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M11,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C10,42.553,10.447,43,11,43 z M12,38h4v3h-4V38z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M23,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C22,42.553,22.447,43,23,43 z M24,38h4v3h-4V38z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M35,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C34,42.553,34.447,43,35,43 z M36,38h4v3h-4V38z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M47,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C46,42.553,46.447,43,47,43 z M48,38h4v3h-4V38z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M11,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C10,31.553,10.447,32,11,32 z M12,27h4v3h-4V27z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M23,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C22,31.553,22.447,32,23,32 z M24,27h4v3h-4V27z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M35,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C34,31.553,34.447,32,35,32 z M36,27h4v3h-4V27z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M47,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C46,31.553,46.447,32,47,32 z M48,27h4v3h-4V27z">
+                                                </path>
+                                                <path fill="#000000"
+                                                    d="M60,4h-7V3c0-1.657-1.343-3-3-3s-3,1.343-3,3v1H17V3c0-1.657-1.343-3-3-3s-3,1.343-3,3v1H4 C1.789,4,0,5.789,0,8v52c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V8C64,5.789,62.211,4,60,4z M49,3c0-0.553,0.447-1,1-1 s1,0.447,1,1v3v4c0,0.553-0.447,1-1,1s-1-0.447-1-1V6V3z M13,3c0-0.553,0.447-1,1-1s1,0.447,1,1v3v4c0,0.553-0.447,1-1,1 s-1-0.447-1-1V6V3z M62,60c0,1.104-0.896,2-2,2H4c-1.104,0-2-0.896-2-2V17h60V60z M62,15H2V8c0-1.104,0.896-2,2-2h7v4 c0,1.657,1.343,3,3,3s3-1.343,3-3V6h30v4c0,1.657,1.343,3,3,3s3-1.343,3-3V6h7c1.104,0,2,0.896,2,2V15z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    13/07/1993
+                                </li>
+                                <li>
+                                    <svg width="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        stroke="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M5 13H8M2 9L4 10L5.27064 6.18807C5.53292 5.40125 5.66405 5.00784 5.90729 4.71698C6.12208 4.46013 6.39792 4.26132 6.70951 4.13878C7.06236 4 7.47705 4 8.30643 4H15.6936C16.523 4 16.9376 4 17.2905 4.13878C17.6021 4.26132 17.8779 4.46013 18.0927 4.71698C18.3359 5.00784 18.4671 5.40125 18.7294 6.18807L20 10L22 9M16 13H19M6.8 10H17.2C18.8802 10 19.7202 10 20.362 10.327C20.9265 10.6146 21.3854 11.0735 21.673 11.638C22 12.2798 22 13.1198 22 14.8V17.5C22 17.9647 22 18.197 21.9616 18.3902C21.8038 19.1836 21.1836 19.8038 20.3902 19.9616C20.197 20 19.9647 20 19.5 20H19C17.8954 20 17 19.1046 17 18C17 17.7239 16.7761 17.5 16.5 17.5H7.5C7.22386 17.5 7 17.7239 7 18C7 19.1046 6.10457 20 5 20H4.5C4.03534 20 3.80302 20 3.60982 19.9616C2.81644 19.8038 2.19624 19.1836 2.03843 18.3902C2 18.197 2 17.9647 2 17.5V14.8C2 13.1198 2 12.2798 2.32698 11.638C2.6146 11.0735 3.07354 10.6146 3.63803 10.327C4.27976 10 5.11984 10 6.8 10Z"
+                                                stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+                                    Permis B automatique
+                                </li>
                             </ul>
                         </div>
-                        <div class="hobby">
-                            <h3>Centres d'intérêt</h3>
-                            <div class="hobby_flex">
-                                <div><img src="img/music.png" alt=""></div>
-                                <div>
-                                    <h4>Musique</h4>
-                                    <p>Hip-hop ~ Chill ~ Classique</p>
-                                </div>
-                            </div>
-                            <div class="hobby_flex">
-                                <div><img src="img/chess.png" alt=""></div>
-                                <div>
-                                    <h4>Echecs</h4>
-                                </div>
-                            </div>
-                            <div class="hobby_flex">
-                                <div><img src="img/esport.png" alt=""></div>
-                                <div>
-                                    <h4>E-sport</h4>
-                                    <p>League of legends - <br> Starcraft - Counter strike</p>
+                    </div>
+                </div>
+                <div id="right_column">
+                    <div id="right_column_content">
+                        <div id="main_title">
+                            <h1>INTÉGRATEUR WEB</h1>
+                            <p>Flexible et polyvalent, je suis à la recherche d'une alternance en tant
+                                qu'intégrateur web pour acquérir de nouvelles compétences et
+                                contribuer à votre entreprise de manière proactive et dynamique.</p>
+                        </div>
+                        <div id="hard_skill">
+                            <h2>COMPÉTENCES</h2>
+                            <div>
+                                <ul>
+                                    <li>Découper, assembler et intégrer tous les éléments d’une maquette
+                                        graphique en HTML5 et CSS3</li>
+                                    <li>Construire un site web fluide s’adaptant à tout type d’écran (web,
+                                        smartphone et tablette)</li>
+                                    <li>Animer les pages web avec CSS3</li>
+                                </ul>
+                                <div id="software">
+                                    <img src="img/vscode.png" alt="">
+                                    <img src="img/photoshop.png" alt="">
+                                    <img src="img/figma.png" alt="">
+                                    <img src="img/xd.png" alt="">
+                                    <img src="img/github.png" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="skill_hobby_border_bottom"></div>
-                    </div>
-                    <div class="contact">
-                        <h2>CONTACT</h2>
-                        <ul>
-                            <li>
-                                <svg width="12px" fill="#000000" viewBox="0 0 32 32" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" stroke="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>house</title>
-                                        <path
-                                            d="M0 16h4l12-13.696 12 13.696h4l-13.984-16h-4zM4 32h8v-9.984q0-0.832 0.576-1.408t1.44-0.608h4q0.8 0 1.408 0.608t0.576 1.408v9.984h8v-13.408l-12-13.248-12 13.248v13.408zM26.016 6.112l4 4.576v-8.672h-4v4.096z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                87300 - Saint-Bonnet-de-Bellac
-                            </li>
-                            <li>
-                                <svg width="12px" fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
-                                    stroke="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path
-                                            d="M20.629 5h-9.257a1.6 1.6 0 0 0-1.601 1.603V25.4a1.6 1.6 0 0 0 1.601 1.601h9.257c.883 0 1.6-.718 1.6-1.601V6.603c0-.885-.717-1.603-1.6-1.603zm-6.247 1.023h3.302v.768h-3.302v-.768zm1.619 19.395a1.024 1.024 0 0 1-1.023-1.021 1.023 1.023 0 0 1 2.044 0c-.001.494-.46 1.021-1.021 1.021zm5.028-3.501H10.971V7.704h10.058v14.213z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <a href="tel:+33768976963">07.68.97.69.63</a>
-                            </li>
-                            <li>
-                                <svg width="12px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>mail-filled</title>
-                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g id="mail-filled-white" fill="#000000"
-                                                transform="translate(42.686667, 85.339333)">
-                                                <path
-                                                    d="M3.55271368e-14,28.7 L213.333914,220.70134 L426.667,28.701 L426.667248,341.333608 L0.00058094128,341.333608 L3.55271368e-14,28.7 Z M394.776,1.42108547e-14 L213.333914,163.285608 L31.89,1.42108547e-14 L394.776,1.42108547e-14 Z"
-                                                    id="Combined-Shape"> </path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <a href="mailto:kleveque.pro@gmail.com" target="_blank">kleveque.pro@gmail.com</a>
-                            </li>
-                            <li>
-                                <svg width="12px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>linkedin [#000000]</title>
-                                        <desc>Created with Sketch.</desc>
-                                        <defs> </defs>
-                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g id="Dribbble-Light-Preview"
-                                                transform="translate(-180.000000, -7479.000000)" fill="#000000">
-                                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                                    <path
-                                                        d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
-                                                        id="linkedin-[#000000]"> </path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <a href="https://www.linkedin.com/in/kevin-leveque/" target="_blank"
-                                    rel="noopener">/kevin-leveque</a>
-                            </li>
-                            <li>
-                                <svg width="12px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <title>github [#000000]</title>
-                                        <desc>Created with Sketch.</desc>
-                                        <defs> </defs>
-                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g id="Dribbble-Light-Preview"
-                                                transform="translate(-140.000000, -7559.000000)" fill="#000000">
-                                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                                    <path
-                                                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
-                                                        id="github-[#000000]"> </path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <a href="https://github.com/NayroFr" target="_blank" rel="noopener">/NayroFr</a>
-                            </li>
-                            <li>
-                                <svg width="12px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"
-                                    enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g>
-                                            <path fill="#000000"
-                                                d="M11,54h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C10,53.553,10.447,54,11,54 z M12,49h4v3h-4V49z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M23,54h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C22,53.553,22.447,54,23,54 z M24,49h4v3h-4V49z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M35,54h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C34,53.553,34.447,54,35,54 z M36,49h4v3h-4V49z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M11,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C10,42.553,10.447,43,11,43 z M12,38h4v3h-4V38z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M23,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C22,42.553,22.447,43,23,43 z M24,38h4v3h-4V38z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M35,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C34,42.553,34.447,43,35,43 z M36,38h4v3h-4V38z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M47,43h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C46,42.553,46.447,43,47,43 z M48,38h4v3h-4V38z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M11,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C10,31.553,10.447,32,11,32 z M12,27h4v3h-4V27z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M23,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C22,31.553,22.447,32,23,32 z M24,27h4v3h-4V27z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M35,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C34,31.553,34.447,32,35,32 z M36,27h4v3h-4V27z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M47,32h6c0.553,0,1-0.447,1-1v-5c0-0.553-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1v5C46,31.553,46.447,32,47,32 z M48,27h4v3h-4V27z">
-                                            </path>
-                                            <path fill="#000000"
-                                                d="M60,4h-7V3c0-1.657-1.343-3-3-3s-3,1.343-3,3v1H17V3c0-1.657-1.343-3-3-3s-3,1.343-3,3v1H4 C1.789,4,0,5.789,0,8v52c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V8C64,5.789,62.211,4,60,4z M49,3c0-0.553,0.447-1,1-1 s1,0.447,1,1v3v4c0,0.553-0.447,1-1,1s-1-0.447-1-1V6V3z M13,3c0-0.553,0.447-1,1-1s1,0.447,1,1v3v4c0,0.553-0.447,1-1,1 s-1-0.447-1-1V6V3z M62,60c0,1.104-0.896,2-2,2H4c-1.104,0-2-0.896-2-2V17h60V60z M62,15H2V8c0-1.104,0.896-2,2-2h7v4 c0,1.657,1.343,3,3,3s3-1.343,3-3V6h30v4c0,1.657,1.343,3,3,3s3-1.343,3-3V6h7c1.104,0,2,0.896,2,2V15z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg>
-                                13/07/1993
-                            </li>
-                            <li>
-                                <svg width="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    stroke="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path
-                                            d="M5 13H8M2 9L4 10L5.27064 6.18807C5.53292 5.40125 5.66405 5.00784 5.90729 4.71698C6.12208 4.46013 6.39792 4.26132 6.70951 4.13878C7.06236 4 7.47705 4 8.30643 4H15.6936C16.523 4 16.9376 4 17.2905 4.13878C17.6021 4.26132 17.8779 4.46013 18.0927 4.71698C18.3359 5.00784 18.4671 5.40125 18.7294 6.18807L20 10L22 9M16 13H19M6.8 10H17.2C18.8802 10 19.7202 10 20.362 10.327C20.9265 10.6146 21.3854 11.0735 21.673 11.638C22 12.2798 22 13.1198 22 14.8V17.5C22 17.9647 22 18.197 21.9616 18.3902C21.8038 19.1836 21.1836 19.8038 20.3902 19.9616C20.197 20 19.9647 20 19.5 20H19C17.8954 20 17 19.1046 17 18C17 17.7239 16.7761 17.5 16.5 17.5H7.5C7.22386 17.5 7 17.7239 7 18C7 19.1046 6.10457 20 5 20H4.5C4.03534 20 3.80302 20 3.60982 19.9616C2.81644 19.8038 2.19624 19.1836 2.03843 18.3902C2 18.197 2 17.9647 2 17.5V14.8C2 13.1198 2 12.2798 2.32698 11.638C2.6146 11.0735 3.07354 10.6146 3.63803 10.327C4.27976 10 5.11984 10 6.8 10Z"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </g>
-                                </svg>
-                                Permis B automatique
-                            </li>
-                        </ul>
+                        <div id="education">
+                            <h2>FORMATION</h2>
+                            <div class="education_flex">
+                                <div class="education_date">2023-2024</div>
+                                <div class="education_info">
+                                    <h3>Développeur intégrateur web - <span class="rncp">RNCP niveau 5 - Bac +2</span>
+                                    </h3>
+                                    <p>OpenClassrooms</p>
+                                    <p>En attente d'entreprise, contrat d'alternance
+                                        d'une durée de 18 mois</p>
+                                </div>
+                            </div>
+                            <div class="education_flex">
+                                <div class="education_date">2022</div>
+                                <div class="education_info">
+                                    <h3>Développeur web et web mobile</h3>
+                                    <p>AFPA, 87000 </p>
+                                </div>
+                            </div>
+                            <div class="education_flex">
+                                <div class="education_date">2013</div>
+                                <div class="education_info">
+                                    <h3>CAP Cuisine</h3>
+                                    <p>Greta, 87100 </p>
+                                </div>
+                            </div>
+                            <div class="education_flex">
+                                <div class="education_date">2010</div>
+                                <div class="education_info">
+                                    <h3>BEP Boucherie</h3>
+                                    <p>Jean-Monnet, 87100 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="work_exp">
+                            <h2>EXPÉRIENCES PROFESSIONNELLE</h2>
+                            <div id="timeline">
+                                <div class="line">
+                                    <ul>
+                                        <li>
+                                            <div class="exp_date">2021-2022</div>
+                                            <div class="exp_info">
+                                                <h3>Agent de maintenance</h3>
+                                                <p>Collège Pierre Mendès, 87250</p>
+                                                <p>Réparation divers - Maintenance informatique </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="exp_date">2019</div>
+                                            <div class="exp_info">
+                                                <h3>Manutentionnaire </h3>
+                                                <p>Centre 7, 87290</p>
+                                                <p>Conditionnement de produits cosmétiques </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="exp_date">2016-2018</div>
+                                            <div class="exp_info">
+                                                <h3>Adjoint technique territorial 2nd classe</h3>
+                                                <p>Limoges Métropole, 87000</p>
+                                                <p>Accueil - Déchargement / tri - Création de carte
+                                                    d'accès</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="exp_date">2013-2015</div>
+                                            <div class="exp_info">
+                                                <h3>Pizzaïolo</h3>
+                                                <p>Restaurant Donna Sarah, 87000</p>
+                                                <p>Confection pizza / dessert - Inventaire - Service</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="right_column">
-                <div>
-                    <h1>INTÉGRATEUR WEB</h1>
-                    <div>Flexible et polyvalent, je suis à la recherche d'une alternance en tant
-                        qu'intégrateur web pour acquérir de nouvelles compétences et
-                        contribuer à votre entreprise de manière proactive et dynamique.</div>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-
+            <div class="footer_bar"></div>
+            <div id="footer_decoration">
+                <div id="triangle_container">
+                    <div class="triangle yellow_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle yellow_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle yellow_triangle"></div>
+                    <div class="triangle yellow_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle yellow_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+                    <div class="triangle yellow_triangle"></div>
+                    <div class="triangle beige_triangle"></div>
+            </div>
+            <div class="arrow_2">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12%" viewBox="0 0 425 512"
+                    enable-background="new 0 0 425 512" xml:space="preserve">
+                    <path fill="#e1dbcb" opacity="1.000000" stroke="none" d="M426.000000,468.000000 
+                        C426.000000,482.354218 426.000000,496.708466 425.531342,511.531189 
+                        C370.636322,511.999542 316.209991,511.987366 261.783661,512.041504 
+                        C259.522156,512.043762 257.261200,512.666382 255.000000,513.000000 
+                        C254.555557,513.000000 254.111099,513.000000 253.274155,512.711792 
+                        C252.398926,512.151184 251.916199,511.878693 251.228210,511.343750 
+                        C171.061035,431.101929 91.097870,351.123840 11.146523,271.133942 
+                        C9.625737,269.612427 8.244550,267.951355 6.887045,265.977234 
+                        C8.523746,263.326752 9.755823,260.739044 11.664930,258.827515 
+                        C94.517021,175.870026 177.432022,92.975410 260.313599,10.047392 
+                        C262.052582,8.307446 263.489227,6.265366 265.455994,4.236108 
+                        C319.230072,4.071992 372.615021,4.035996 426.000000,4.000000 
+                        C426.000000,23.687561 426.000000,43.375122 425.742920,63.513004 
+                        C425.276001,64.217682 425.066193,64.472038 424.841431,64.912605 
+                        C424.826477,65.098816 425.092468,65.361168 424.799927,65.490494 
+                        C423.779236,66.303360 423.031616,66.967430 422.325745,67.673233 
+                        C358.477173,131.517929 294.630310,195.364273 230.796310,259.223511 
+                        C229.393677,260.626709 228.140610,262.179382 226.456482,263.684784 
+                        C223.249756,266.277374 223.342896,266.877197 226.949326,268.646698 
+                        C227.762558,269.676178 228.419785,270.430267 229.125381,271.135956 
+                        C291.900513,333.919800 354.678833,396.700500 417.464081,459.474213 
+                        C418.284363,460.294312 419.196167,461.022888 420.055267,462.142120 
+                        C422.030182,464.326721 424.015106,466.163361 426.000000,468.000000 z" />
+                </svg>
+            </div>
+            <div class="arrow_1">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14%" viewBox="0 0 425 512"
+                    enable-background="new 0 0 425 512" xml:space="preserve">
+                    <path fill="#B27F00" opacity="1.000000" stroke="none" d="M426.000000,468.000000 
+                        C426.000000,482.354218 426.000000,496.708466 425.531342,511.531189 
+                        C370.636322,511.999542 316.209991,511.987366 261.783661,512.041504 
+                        C259.522156,512.043762 257.261200,512.666382 255.000000,513.000000 
+                        C254.555557,513.000000 254.111099,513.000000 253.274155,512.711792 
+                        C252.398926,512.151184 251.916199,511.878693 251.228210,511.343750 
+                        C171.061035,431.101929 91.097870,351.123840 11.146523,271.133942 
+                        C9.625737,269.612427 8.244550,267.951355 6.887045,265.977234 
+                        C8.523746,263.326752 9.755823,260.739044 11.664930,258.827515 
+                        C94.517021,175.870026 177.432022,92.975410 260.313599,10.047392 
+                        C262.052582,8.307446 263.489227,6.265366 265.455994,4.236108 
+                        C319.230072,4.071992 372.615021,4.035996 426.000000,4.000000 
+                        C426.000000,23.687561 426.000000,43.375122 425.742920,63.513004 
+                        C425.276001,64.217682 425.066193,64.472038 424.841431,64.912605 
+                        C424.826477,65.098816 425.092468,65.361168 424.799927,65.490494 
+                        C423.779236,66.303360 423.031616,66.967430 422.325745,67.673233 
+                        C358.477173,131.517929 294.630310,195.364273 230.796310,259.223511 
+                        C229.393677,260.626709 228.140610,262.179382 226.456482,263.684784 
+                        C223.249756,266.277374 223.342896,266.877197 226.949326,268.646698 
+                        C227.762558,269.676178 228.419785,270.430267 229.125381,271.135956 
+                        C291.900513,333.919800 354.678833,396.700500 417.464081,459.474213 
+                        C418.284363,460.294312 419.196167,461.022888 420.055267,462.142120 
+                        C422.030182,464.326721 424.015106,466.163361 426.000000,468.000000 z" />
+                </svg>
+            </div>
             </div>
         </div>
     </main>
