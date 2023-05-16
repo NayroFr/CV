@@ -44,7 +44,7 @@ main {
   margin: 2vh 0;
   .container {
     margin: 0 auto;
-    height: 1000px;
+    height: 1100px;
     width: 800px;
     box-shadow: 18px 14px 16px -8px #464544;
     .flex_container {
@@ -52,7 +52,7 @@ main {
       #left_column {
         color: black;
         background-color: $leftColumnBackground;
-        height: 1000px;
+        height: 1100px;
         width: 35%;
         display: flex;
         flex-direction: row;
@@ -103,7 +103,7 @@ main {
           }
           #skill_hobby {
             padding-left: 20px;
-            margin: 50px 0;
+            margin: 20px 0;
             .skill_hobby_border_top {
               position: relative;
               height: 20px;
@@ -117,6 +117,31 @@ main {
               font-size: 1.1em;
               font-weight: 400;
               padding-bottom: 10px;
+            }
+            #language_framework {
+              margin-bottom: 20px;
+              ul {
+                padding-left: 20px;
+                li {
+                  font-size: 0.95em;
+                  span {
+                    margin-left: -6px;
+                  }
+                  &::marker {
+                    font-size: 0.85em;
+                  }
+                }
+              }
+            }
+            #software {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              padding-right: 30px;
+              img {
+                width: 10%;
+                margin: 0 5px 20px;
+              }
             }
             #soft_skill {
               margin-bottom: 20px;
@@ -163,7 +188,7 @@ main {
             }
           }
           #contact {
-            margin-top: 40px;
+            margin-top: 10px;
             padding-left: 20px;
             h2 {
               margin-bottom: 10px;
@@ -193,7 +218,7 @@ main {
       #right_column {
         background-color: $rightColumnBackground;
         color: black;
-        height: 1000px;
+        height: 1100px;
         width: 65%;
         #right_column_content {
           padding: 0 15px 0 25px;
@@ -209,7 +234,7 @@ main {
           }
           #main_title {
             padding-right: 20px;
-            margin: 35px 0 25px;
+            margin: 35px 0 15px;
             h1 {
               text-align: center;
               color: $yellowDecoration;
@@ -231,15 +256,19 @@ main {
                 font-size: 0.9em;
               }
             }
-            #software {
-              display: flex;
-              justify-content: center;
-              img {
-                width: 7%;
-                margin: 0 5px;
-              }
+            hr {
+              width: 18%;
+              border: none;
+              height: 1px;
+              margin: 10px 0;
+              background-color: $yellowDecoration;
+            }
+            h3 {
+              font-size: 0.8em;
+              margin-bottom: 10px;
             }
           }
+
           #education {
             .education_flex {
               display: flex;
@@ -393,20 +422,35 @@ main {
           transform: rotate(105deg);
           margin-left: -8px;
         }
+        // :nth-child(16) {
+        //   transform: rotate(10deg);
+        //   margin-left: 5px;
+        // }
+        // :nth-child(17) {
+        //   transform: rotate(51deg);
+        // }
+        // :nth-child(18) {
+        //   transform: rotate(156deg);
+        //   margin-left: 10px;
+        // }
+        // :nth-child(19) {
+        //   transform: rotate(216deg);
+        //   margin-left: 10px;
+        // }
       }
       .arrow_1 {
         text-align: end;
         position: relative;
-        top: -200px;
-        filter: drop-shadow(-4px 0px 2px #979797);
+        top: -199.2px;
+        filter: drop-shadow(-4px 0px 2px #444444);
         height: 0;
       }
       .arrow_2 {
         text-align: end;
         position: relative;
-        top: -180px;
+        top: -179.8px;
         left: -45px;
-        filter: drop-shadow(-4px 0px 4px #646464);
+        filter: drop-shadow(-4px 0px 4px #3d3d3d);
         height: 0;
       }
     }
